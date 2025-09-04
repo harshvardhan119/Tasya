@@ -62,3 +62,6 @@ git push origin your-new-feature-branch
 
 ### Step 5: Open a PR
 Finally, go to your forked repository on GitHub. You will see a button to "Compare & pull request". Click it, add a descriptive title and comment, and create the pull request.  Don't forget to divert the merge to `main` branch of the original repository.
+
+
+Harsh- “THANK YOU”
