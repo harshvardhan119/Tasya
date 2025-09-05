@@ -37,7 +37,7 @@ git remote add upstream https://github.com/Harshvardhansingh19/Tasya.git
 git remote -v
 ```
 
-### Step 4: Make, Commit, & Push your changes
+### Step 4: Make, Stage, Commit, & Push your changes
 Now you are all set to make your contributions!
 - **Sync with Upstream**: Before you start working, its a good practice to pull the latest changes from the `upstream` repository.
 ```
