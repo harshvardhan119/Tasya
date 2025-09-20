@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasya - The Future of Digital Art</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      html, body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: 'Exo 2', sans-serif;
+        background-color: #0c011e;
+      }
+      body.modal-open {
+        overflow: hidden;
+      }
+      .font-audiowide {
+        font-family: 'Audiowide', cursive;
+      }
+      @keyframes move-grid {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 -100px; }
+      }
+      @keyframes pulse-glow {
+        0%, 100% {
+          box-shadow: 0 0 40px 10px rgba(255, 105, 180, 0.6), 0 0 70px 30px rgba(255, 105, 180, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 50px 20px rgba(255, 105, 180, 0.7), 0 0 80px 40px rgba(255, 105, 180, 0.5);
+        }
+      }
+      @keyframes text-flicker {
+        0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f, 0 0 30px #00f, 0 0 35px #00f; }
+        50% { text-shadow: 0 0 6px #fff, 0 0 12px #fff, 0 0 18px #00a, 0 0 24px #00a, 0 0 30px #00a, 0 0 36px #00a, 0 0 42px #00a; }
+      }
+      .animate-move-grid {
+        animation: move-grid 4s linear infinite;
+      }
+      .animate-pulse-glow {
+        animation: pulse-glow 5s ease-in-out infinite;
+      }
+      .animate-text-flicker {
+        animation: text-flicker 6s ease-in-out infinite;
+      }
+      .bg-dotted {
+        background-color: #1a0537;
+        background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+        background-size: 1.25rem 1.25rem;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.19"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#0c011e] text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
