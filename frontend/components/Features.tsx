@@ -49,6 +49,7 @@ const Features: React.FC = () => {
           <p className="mt-4 text-lg md:text-xl text-cyan-300 max-w-3xl mx-auto">
             We provide cutting-edge tools to make your artwork shine and connect with a wider audience.
           </p>
+          <p>Click To try Advance AI features</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-24 md:mb-32">
@@ -60,7 +61,7 @@ const Features: React.FC = () => {
             whileHover={cardHoverEffect}
             custom={1}
             className="p-8 rounded-xl bg-black/20 backdrop-blur-md border border-pink-500/50 shadow-lg shadow-pink-500/10 transition-shadow duration-300"
-            onClick={() => window.location.href = 'https://tasya-eight.vercel.app'}
+           
             >
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-pink-500/20 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg></div>
@@ -69,6 +70,10 @@ const Features: React.FC = () => {
             <p className="text-gray-300">
               Turn your creations into masterpieces. Our AI enhances colors, sharpness, and lighting to professional gallery standards, ensuring your art looks breathtaking on any screen.
             </p>
+                         <button
+    onClick={() => window.location.href = 'https://tasya-eight.vercel.app'}
+    className="mt-2 px-5 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition-colors"
+  >
           </motion.div>
           <motion.div
             initial="hidden"
@@ -78,7 +83,7 @@ const Features: React.FC = () => {
             whileHover={cardHoverEffectCyan}
             custom={2}
             className="p-8 rounded-xl bg-black/20 backdrop-blur-md border border-cyan-500/50 shadow-lg shadow-cyan-500/10 transition-shadow duration-300"
-            onClick={() => window.location.href = 'https://tasya-eight.vercel.app'}
+            
             >
             <div className="flex items-center gap-4 mb-4">
                <div className="bg-cyan-500/20 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg></div>
@@ -87,6 +92,12 @@ const Features: React.FC = () => {
             <p className="text-gray-300">
              Struggle with words? Let our AI generate compelling stories and descriptions for your art. Attract more patrons by telling the unique narrative behind each piece.
             </p>
+             <button
+    onClick={() => window.location.href = 'https://tasya-7536.vercel.app'}
+    className="mt-2 px-5 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition-colors"
+  >
+    Visit Platform
+  </button>
           </motion.div>
         </div>
 
