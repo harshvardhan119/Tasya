@@ -73,7 +73,8 @@ const Features: React.FC = () => {
                          <button
     onClick={() => window.location.href = 'https://tasya-eight.vercel.app'}
     className="mt-2 px-5 py-2 bg-cyan-500 text-white rounded-lg font-semibold hover:bg-cyan-600 transition-colors"
-  >
+  >  Visit Platform
+  </button>
           </motion.div>
           <motion.div
             initial="hidden"
