@@ -60,7 +60,8 @@ const Features: React.FC = () => {
             whileHover={cardHoverEffect}
             custom={1}
             className="p-8 rounded-xl bg-black/20 backdrop-blur-md border border-pink-500/50 shadow-lg shadow-pink-500/10 transition-shadow duration-300"
-          >
+            onClick={() => window.location.href = 'https://tasya-eight.vercel.app'
+            >
             <div className="flex items-center gap-4 mb-4">
               <div className="bg-pink-500/20 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg></div>
               <h3 className="font-audiowide text-2xl text-white">Studio Quality Enhancement</h3>
@@ -77,7 +78,8 @@ const Features: React.FC = () => {
             whileHover={cardHoverEffectCyan}
             custom={2}
             className="p-8 rounded-xl bg-black/20 backdrop-blur-md border border-cyan-500/50 shadow-lg shadow-cyan-500/10 transition-shadow duration-300"
-          >
+            onClick={() => window.location.href = 'https://tasya-eight.vercel.app'
+            >
             <div className="flex items-center gap-4 mb-4">
                <div className="bg-cyan-500/20 p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg></div>
               <h3 className="font-audiowide text-2xl text-white">AI-Generated Descriptions</h3>
