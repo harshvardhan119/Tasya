@@ -29,10 +29,13 @@ const SignInModal: React.FC<SignInModalProps> = ({
       const res = await axios.post(
         `${import.meta.env.VITE_BACKEND_BASE_URL}/api/auth/login`,
         { email, password }
+        
       );
-
+       const token = res.data.token;
+       localStorage.setItem("token", token);
       // Pass token up to App
-      onLoginSuccess(res.data.token);
+      onLoginSuccess(token);
+      
     } catch (err: any) {
       setError(
         err.response?.data?.message || "Login failed. Please try again."
@@ -97,7 +100,8 @@ const SignInModal: React.FC<SignInModalProps> = ({
                   htmlFor="email"
                   className="block text-sm font-medium text-pink-300 mb-2"
                 >
-                  Email
+                  Email<br></br>
+                   email:test@gmail.com pass:123456789
                 </label>
                 <input
                   type="email"
@@ -106,7 +110,7 @@ const SignInModal: React.FC<SignInModalProps> = ({
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full pl-4 pr-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 backdrop-blur-sm transition-all duration-300"
-                  placeholder="you@example.com"
+                  placeholder="test@gmail.com"
                 />
               </div>
               <div>
@@ -123,7 +127,7 @@ const SignInModal: React.FC<SignInModalProps> = ({
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full pl-4 pr-4 py-3 bg-gray-900/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400 backdrop-blur-sm transition-all duration-300"
-                  placeholder="••••••••"
+                  placeholder="123456789"
                 />
               </div>
 
